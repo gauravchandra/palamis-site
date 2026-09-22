@@ -99,7 +99,7 @@
       color: #c8d8e8;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       header {
         padding: 24px;
       }
@@ -107,32 +107,16 @@
       main {
         padding-left: 24px;
         padding-right: 24px;
-        padding-top: 0;
-        padding-bottom: 80px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        min-height: 100vh;
+        padding-block: 100px;
       }
 
       .tagline {
         white-space: normal;
-        font-size: clamp(1.2rem, 5vw, 1.6rem);
-        text-wrap: balance;
+        font-size: 1.2rem;
       }
 
-      .contact {
-        font-size: 15px;
-      }
-
-      /* shift image so the robot arm stays visible on narrow screens */
       .bg {
-        background-position: 65% center;
-      }
-
-      /* slightly darker overlay on mobile for readability */
-      .bg::after {
-        background: rgba(5, 7, 12, 0.62);
+        background-position: 70% center;
       }
     }
   </style>
